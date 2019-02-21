@@ -245,6 +245,15 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick .btn {
+  background-color: teal;
+  color: white;
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  text-align: center;
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
