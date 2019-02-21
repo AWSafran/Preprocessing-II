@@ -169,16 +169,27 @@ img {
   margin: 0 auto;
 }
 .head-container {
-  width: 800px;
+  max-width: 800px;
   display: flex;
   margin: 0 auto;
   padding: 15px 0;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .head-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .head-container nav {
   width: 45%;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .head-container nav {
+    width: 90%;
+  }
 }
 .head-container nav a {
   text-decoration: none;
@@ -186,7 +197,9 @@ img {
   padding-top: 15px;
 }
 .head-container h1 {
-  width: 25%;
+  width: 20%;
+  margin: 0 auto;
+  font-size: 2.4rem;
 }
 .footer {
   width: 100%;
