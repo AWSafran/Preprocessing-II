@@ -8,3 +8,28 @@
     font-size: 1.6rem;
     text-align: center;
 }
+
+//Animation Mixin
+
+@keyframes flash{
+    from{
+        background: black;
+    }
+    to{
+        background: white;
+    }
+}
+
+@keyframes fontchange{
+    0%{font-size: .5rem}
+    25%{font-size: 1rem}
+    50%{font-size: 1.6rem}
+    75%{font-size: 2rem}
+    100%{font-size: 1.2rem}
+}
+
+.animation(@animation, @length: 0.5s, @iterations: infinite){
+    animation-name: @animation;
+    animation-duration: @length;
+    animation-iteration-count: @iterations;
+}
